@@ -10,7 +10,7 @@ vcpkg_from_github(
         # https://github.com/anholt/libepoxy/pull/220
         libepoxy-1.5.4_Add_call_convention_to_mock_function.patch
 )
-
+set(VCPKG_SET_CHARSET_FLAG ON)
 if (VCPKG_TARGET_IS_WINDOWS OR VCPKG_TARGET_IS_OSX)
     vcpkg_configure_meson(SOURCE_PATH ${SOURCE_PATH}
         OPTIONS

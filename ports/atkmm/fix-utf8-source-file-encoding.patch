@@ -1,0 +1,40 @@
+diff --git a/MSVC_Net2013/atkmm.vcxproj b/MSVC_Net2013/atkmm.vcxproj
+index e9f5c5e..9ed27af 100644
+--- a/MSVC_Net2013/atkmm.vcxproj
++++ b/MSVC_Net2013/atkmm.vcxproj
+@@ -77,7 +77,7 @@
+   </PropertyGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <PreprocessorDefinitions>_DEBUG;$(AtkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <MinimalRebuild>true</MinimalRebuild>
+@@ -105,7 +105,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <PreprocessorDefinitions>$(AtkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+@@ -134,7 +134,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <PreprocessorDefinitions>_DEBUG;$(AtkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <MinimalRebuild>true</MinimalRebuild>
+@@ -166,7 +166,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <PreprocessorDefinitions>$(AtkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <RuntimeTypeInfo>true</RuntimeTypeInfo>
