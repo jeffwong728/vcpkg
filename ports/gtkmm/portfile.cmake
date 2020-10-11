@@ -18,6 +18,7 @@ vcpkg_extract_source_archive_ex(
     PATCHES
         fix_properties.patch
         fix_treeviewcolumn.patch
+        fix-utf8-source-encoding.patch
 )
 
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/msvc_recommended_pragmas.h DESTINATION ${SOURCE_PATH}/MSVC_Net2013)

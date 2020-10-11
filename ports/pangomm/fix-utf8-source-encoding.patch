@@ -1,0 +1,40 @@
+diff --git a/MSVC_Net2013/pangomm.vcxproj b/MSVC_Net2013/pangomm.vcxproj
+index d63becf..ceea09e 100644
+--- a/MSVC_Net2013/pangomm.vcxproj
++++ b/MSVC_Net2013/pangomm.vcxproj
+@@ -82,7 +82,7 @@
+   </PropertyGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <PreprocessorDefinitions>_DEBUG;$(PangoMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <MinimalRebuild>true</MinimalRebuild>
+@@ -110,7 +110,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <PreprocessorDefinitions>$(PangoMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+@@ -139,7 +139,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <PreprocessorDefinitions>_DEBUG;$(PangoMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <MinimalRebuild>true</MinimalRebuild>
+@@ -171,7 +171,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <PreprocessorDefinitions>$(PangoMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <RuntimeTypeInfo>true</RuntimeTypeInfo>

@@ -1,0 +1,120 @@
+diff --git a/MSVC_Net2013/gdkmm.vcxproj b/MSVC_Net2013/gdkmm.vcxproj
+index 94c6396..ff771d2 100644
+--- a/MSVC_Net2013/gdkmm.vcxproj
++++ b/MSVC_Net2013/gdkmm.vcxproj
+@@ -76,7 +76,7 @@
+   </PropertyGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <PreprocessorDefinitions>_DEBUG;$(GdkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <MinimalRebuild>true</MinimalRebuild>
+@@ -104,7 +104,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <PreprocessorDefinitions>$(GdkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+@@ -133,7 +133,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <PreprocessorDefinitions>_DEBUG;$(GdkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <MinimalRebuild>true</MinimalRebuild>
+@@ -165,7 +165,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <PreprocessorDefinitions>$(GdkMMBuildDefs);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+diff --git a/MSVC_Net2013/gtkmm.vcxproj b/MSVC_Net2013/gtkmm.vcxproj
+index ec56ed1..c62f1cb 100644
+--- a/MSVC_Net2013/gtkmm.vcxproj
++++ b/MSVC_Net2013/gtkmm.vcxproj
+@@ -77,7 +77,7 @@
+   </PropertyGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>_DEBUG;_NO_CRT_STDIO_INLINE;$(GtkMMBuildDefs);_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+@@ -106,7 +106,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>$(GtkMMBuildDefs);_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+@@ -136,7 +136,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>_DEBUG;_NO_CRT_STDIO_INLINE;$(GtkMMBuildDefs);)</PreprocessorDefinitions>
+@@ -169,7 +169,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>$(GtkMMBuildDefs);_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+diff --git a/MSVC_Net2013/gtkmm3-demo.vcxproj b/MSVC_Net2013/gtkmm3-demo.vcxproj
+index 9c33d45..516c747 100644
+--- a/MSVC_Net2013/gtkmm3-demo.vcxproj
++++ b/MSVC_Net2013/gtkmm3-demo.vcxproj
+@@ -77,7 +77,7 @@
+   </PropertyGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+@@ -104,7 +104,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+@@ -132,7 +132,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <Optimization>Disabled</Optimization>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+@@ -162,7 +162,7 @@
+       <TargetEnvironment>X64</TargetEnvironment>
+     </Midl>
+     <ClCompile>
+-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
